@@ -7,7 +7,6 @@ import { useState } from "react";
 
 export const UserList = () => {
   const [data, setData] = useState(userRows);
-  console.log(data);
 
   const handleDelete = (userId) => {
     setData(data.filter((user) => user.id !== userId));
